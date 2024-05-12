@@ -19,12 +19,13 @@ body {
 #display {
   display: flex;
   box-sizing: border-box;
-  height: 150px;
-  width: 470px;
   background-color: black;
   color: white;
-  font-size: 80px;
-  padding: 20px;
+  width: 70vw;
+  font-size: 70px;
+  max-width: 490px;
+  height: 150px;
+  padding: 30px;
   border: none;
   border-radius: 20px 20px 0 0;
   text-align: right;
@@ -33,8 +34,10 @@ body {
 #keys {
   background-color: black;
   border-radius: 0 0 20px 20px;
-  height: 550px;
-  width: 470px;
+  width: 70vw;
+  height: 650px;
+  max-width: 490px;
+  max-height: 600px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -69,4 +72,169 @@ body {
 
 .operand:hover {
   background-color: orange;
+  color: white;
+}
+
+@media (min-width: 651px) {
+  #keys {
+    height: 400px;
+    width: 380px;
+    gap: 20px;
+  }
+
+  #display {
+    width: 380px;
+  }
+
+  .key {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  #keys {
+    height: 400px;
+  }
+
+  #display {
+    height: 130px;
+  }
+
+  .key {
+    width: 10vw;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  #display {
+    height: 120px;
+    font-size: 60px;
+  }
+
+  .key {
+    height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  #keys {
+    height: 350px;
+  }
+
+  #display {
+    height: 110px;
+    font-size: 45px;
+    padding: 20px;
+  }
+
+  .key {
+    height: 50px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  #keys {
+    height: 300px;
+  }
+
+  #display {
+    height: 90px;
+    font-size: 35px;
+    padding: 18px;
+  }
+
+  .key {
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  #keys {
+    height: 200px;
+    gap: 15px;
+  }
+
+  #display {
+    height: 60px;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .key {
+    height: 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 200px) {
+  #keys {
+    height: 175px;
+    gap: 10px;
+  }
+
+  #display {
+    height: 50px;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .key {
+    height: 25px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 170px) {
+  #keys {
+    height: 145px;
+    gap: 8px;
+  }
+
+  #display {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .key {
+    height: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 120px) {
+  #keys {
+    height: 95px;
+    gap: 6px;
+    width: 100vw;
+  }
+
+  #display {
+    height: 30px;
+    width: 100vw;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .key {
+    height: 12px;
+    font-size: 7px;
+  }
+}
+
+@media (hover: none) {
+  .key:hover {
+    background-color: gray;
+    opacity: 1;
+    color: white;
+  }
+
+  .operand:hover {
+    background-color: orange;
+    color: white;
+    opacity: 1;
+  }
 }
