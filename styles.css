@@ -42,8 +42,13 @@ body {
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   padding: 0 30px 30px 30px;
   gap: 20px;
+}
+
+button:first-child {
+  grid-column: 3;
 }
 
 .key {
